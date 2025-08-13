@@ -1,4 +1,4 @@
-# Junk Triage – Gmail Spam Rescue Chrome Extension
+# Email Triage – Gmail Spam Rescue Chrome Extension
 
 ## 📌 Overview
 Ever missed an important email because it landed in your **Spam** folder with no notification?  
