@@ -23,3 +23,10 @@ The goal is to make sure important messages are never lost, while still keeping 
 ```bash
 git clone https://github.com/r8bhavneet/Email-Triage.git
 cd Email-Triage
+
+
+## 📷 Screenshot
+
+Here’s how the extension looks when listing spam emails:
+
+![Extension popup showing spam emails](Testing/Test_1.png)
