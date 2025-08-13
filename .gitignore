@@ -1,0 +1,14 @@
+# local secrets
+config.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+
+# Node if you add tooling later
+node_modules/
+dist/

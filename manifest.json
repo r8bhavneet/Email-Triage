@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Junk Triage (Gmail)",
+  "version": "0.0.1",
+  "description": "Review Gmail spam and rescue important emails to the inbox.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Junk Triage"
+  },
+  "permissions": [
+    "identity",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "sw.js"
+  }
+}

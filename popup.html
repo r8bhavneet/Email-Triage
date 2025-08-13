@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Junk Triage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font: 13px system-ui, sans-serif; margin: 0; width: 380px; }
+    header { padding: 12px; border-bottom: 1px solid #eee; display:flex; align-items:center; justify-content:space-between; }
+    main { padding: 12px; }
+    button { cursor: pointer; }
+    .row { display:flex; gap:8px; align-items:center; }
+    .msg { border:1px solid #eee; border-radius:8px; padding:10px; margin-bottom:8px; }
+    .from { font-weight: 600; }
+    .subject { margin:4px 0; }
+    .actions { display:flex; gap:6px; }
+    .muted { color:#666; }
+    .badge { background:#efefef; border-radius:6px; padding:2px 6px; font-size:11px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Junk Triage</strong></div>
+    <div class="row">
+      <span id="status" class="badge">Signed out</span>
+      <button id="signin">Sign in</button>
+      <button id="signout">Sign out</button>
+    </div>
+  </header>
+  <main>
+    <div class="row" style="justify-content:space-between; margin-bottom:8px;">
+      <button id="refresh" disabled>Refresh Spam</button>
+      <label class="row" title="Auto move mail from trusted senders">
+        <input type="checkbox" id="autoRescue" />
+        <span class="muted">Auto-rescue trusted senders</span>
+      </label>
+    </div>
+    <div id="list"></div>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
